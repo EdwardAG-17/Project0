@@ -1,7 +1,7 @@
 from fastapi import FastAPI #importamos el modulo FastAPI del paquete fastapi
 
 #ROUTERS:
-from FastAPI.BackendPy.routers import products, users, jwt_auth_users, users_db #importamos los routers
+from BackendPy.routers import products, users, jwt_auth_users, users_db #importamos los routers
 
 #IMPORTAR RECURSOS ESTATICOS:
 from fastapi.staticfiles import StaticFiles
