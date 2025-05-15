@@ -15,7 +15,7 @@ app.include_router(jwt_auth_users.router)
 app.include_router(users_db.router)
 
 #incluimos recursos estaticos:
-app.mount("/static", StaticFiles (directory="FastAPI/BackendPy/static"),name="static")
+app.mount("/static", StaticFiles (directory="BackendPy/static"),name="static")
 #le damos el path "/static" que usaremos en la url, y le asignamos el directorio donde se encuentran
 #los archivos estaticos con el nombre "static" para referirnos a ellos.
 #Para llamarlos el la url deberemos agregar "/static" (path) "/images" (folder dentro del directorio "static") "gato.jpg" (file de img).
