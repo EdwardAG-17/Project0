@@ -4,10 +4,11 @@
 #para EJECUTARLO en el cmd: sudo mongod --dbpath "path/de/la/base/de/datos" 
 from fastapi import APIRouter, HTTPException, status, HTTPException, FastAPI
 from pydantic import BaseModel
+from BackendPy import db
 
-from db.models.user import User #importamos la clase User de models, que nos permite crear un modelo de datos para los usuarios.
-from db.client import db_client #importamos la clase db_client de la base de datos, que nos permite conectarnos a la base de datos.
-from db.schemas.user import user_schema, user_schema_list #importamos la funcion user_schema de schemas, que nos permite transformar los datos.
+from BackendPy.db.models.user import User #importamos la clase User de models, que nos permite crear un modelo de datos para los usuarios.
+from BackendPy.db.client import db_client #importamos la clase db_client de la base de datos, que nos permite conectarnos a la base de datos.
+from BackendPy.db.schemas.user import user_schema, user_schema_list #importamos la funcion user_schema de schemas, que nos permite transformar los datos.
 from bson import ObjectId #importamos la clase ObjectId  que nos permite trabajar con los ids de mongodb.
 
 
